@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: hsl($grayishWhite);
+  width: 100%;
+
+  .contentBox {
+    position: relative;
+    min-width: 390px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: hsl($sageGreen);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: hsl($smokeyBlack);
+}

@@ -1,0 +1,58 @@
+header {
+  position: relative;
+  margin: 0px auto;
+
+  .displayImage {
+    width: 100%;
+    height: 15rem;
+    background-image: url("../images/couple.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      height: 20rem;
+    }
+
+    @include desktop {
+      height: 30rem;
+    }
+  }
+
+  .heading {
+    position: absolute;
+    padding: 5px 2px;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    color: hsl($grayishWhite);
+    user-select: none;
+
+    h1 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+
+    @include desktop {
+      width: 30rem;
+      height: 7rem;
+      left: 1rem;
+      bottom: 1rem;
+      border-radius: 20px;
+
+      h1 {
+        font-size: 3rem;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
