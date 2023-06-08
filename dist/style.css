@@ -79,7 +79,7 @@ header .heading {
 header .heading h1 {
   text-align: center;
 }
-header .heading h4 {
+header .heading #weddingCntDown {
   text-align: center;
 }
 @media (min-width: 1080px) {
@@ -93,7 +93,7 @@ header .heading h4 {
   header .heading h1 {
     font-size: 3rem;
   }
-  header .heading h4 {
+  header .heading #weddingCntDown {
     font-size: 2rem;
   }
 }
