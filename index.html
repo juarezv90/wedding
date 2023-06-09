@@ -28,9 +28,22 @@
       rel="preload"
       fetchpriority="high"
       as="image"
-      href="./images/couple.jpg"
+      href="./images/couple.webp"
       type="image/jpg"
     />
+    <!-- <script>
+      function loadPage(input = './index.html') {
+        console.log("test");
+        fetch(input)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("htmltest").innerHTML = html;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
+    </script> -->
   </head>
   <body>
     <div class="contentBox">
@@ -42,18 +55,44 @@
         </div>
       </header>
       <nav>
+        <ul class="mobile-nav">
+          <li class="date">April 19, 2024</li>
+          <li>
+            <img
+              src="./images/icons/burger.svg"
+              alt="SVG burger menu"
+              id="burger-menu"
+            />
+          </li>
+          <li id="mobile-menu" style="opacity: 0; right: -10rem">
+            <ul>
+              <li>Our Story</li>
+              <li>Save The Date</li>
+              <li>Photos</li>
+              <li>RSVP</li>
+              <li>Wedding Party</li>
+              <li>Registry</li>
+            </ul>
+          </li>
+        </ul>
         <ul class="nav">
           <li>Our Story</li>
           <li>Save The Date</li>
           <li>Photos</li>
           <li class="date">April 19, 2024</li>
-          <li>Events</li>
+          <li>RSVP</li>
           <li>Wedding Party</li>
           <li>Registry</li>
         </ul>
       </nav>
+      <div id="htmltest"></div>
     </div>
     <!-- <a target="_blank" href="https://icons8.com/icon/80530/wedding-cake">Wedding Cake</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
   </body>
-  <script type="module" src="./scripts/script.js" defer="true"></script>
+  <script
+    type="application/javascript"
+    src="./scripts/script.js"
+    defer
+  ></script>
+  
 </html>
