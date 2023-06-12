@@ -13,6 +13,15 @@ html {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline;
+}
+
 body {
   background-color: hsl(60, 0%, 91%);
   width: 100%;
@@ -38,7 +47,7 @@ body .contentBox {
   background-color: hsl(27, 27%, 8%);
 }
 
-#htmltest {
+#pageContent {
   width: 100%;
   height: auto;
 }
@@ -114,6 +123,7 @@ nav {
 }
 nav ul {
   position: relative;
+  max-width: 1280px;
 }
 nav ul .date {
   font-size: 1.5rem;
@@ -121,6 +131,9 @@ nav ul .date {
 }
 nav ul.nav {
   display: none;
+}
+nav ul.nav li {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   nav ul.nav {
@@ -144,6 +157,7 @@ nav ul.mobile-nav {
 }
 nav ul.mobile-nav #burger-menu {
   width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
 }
 nav ul.mobile-nav #mobile-menu {
@@ -169,4 +183,29 @@ nav ul.mobile-nav #mobile-menu li:not(:last-child) {
 
 .change {
   height: 100vh;
+}
+
+.about {
+  width: 100%;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 2rem 0;
+  }
+}
+.about .aboutImage {
+  width: 100%;
+  aspect-ratio: 2/1;
+  display: inline;
+  background-image: url("../images/couple.webp");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .about .aboutImage {
+    width: 25rem;
+  }
 }/*# sourceMappingURL=style.css.map */

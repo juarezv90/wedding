@@ -1,0 +1,24 @@
+.about {
+    width: 100%;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+
+    @include tablet {
+        padding: 2rem 0;
+    }
+
+
+    .aboutImage {
+        width: 100%;
+        aspect-ratio: 2/1;
+        display: inline;
+        background-image: url('../images/couple.webp');
+        background-size: cover;
+        background-position: center;
+
+        @include tablet {
+            width: 25rem;
+        }
+    }
+}

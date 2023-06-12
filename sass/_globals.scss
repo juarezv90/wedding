@@ -14,6 +14,15 @@ html {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline;
+}
+
 body {
   background-color: hsl($grayishWhite);
   width: 100%;
@@ -40,7 +49,7 @@ body {
   background-color: hsl($smokeyBlack);
 }
 
-#htmltest {
+#pageContent {
   width: 100%;
   height: auto;
 }

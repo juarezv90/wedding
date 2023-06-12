@@ -31,21 +31,9 @@
       href="./images/couple.webp"
       type="image/jpg"
     />
-    <!-- <script>
-      function loadPage(input = './index.html') {
-        console.log("test");
-        fetch(input)
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById("htmltest").innerHTML = html;
-          })
-          .catch((error) => {
-            console.error(error);
-          });
-      }
-    </script> -->
+    <script></script>
   </head>
-  <body>
+  <body onload="loadPage()">
     <div class="contentBox">
       <header class="header">
         <div class="displayImage"></div>
@@ -62,6 +50,8 @@
               src="./images/icons/burger.svg"
               alt="SVG burger menu"
               id="burger-menu"
+              width="10"
+              height="10"
             />
           </li>
           <li id="mobile-menu" style="opacity: 0; right: -10rem">
@@ -76,16 +66,24 @@
           </li>
         </ul>
         <ul class="nav">
-          <li>Our Story</li>
-          <li>Save The Date</li>
+          <li onclick="loadPage('ourstory')">Our Story</li>
+          <li onclick="loadPage('savethedate')">Save The Date</li>
           <li>Photos</li>
-          <li class="date">April 19, 2024</li>
+          <li class="date" onclick="home()">April 19, 2024</li>
           <li>RSVP</li>
           <li>Wedding Party</li>
           <li>Registry</li>
         </ul>
       </nav>
-      <div id="htmltest"></div>
+      <div id="pageContent">
+        <div class="about">
+          <div class="aboutImage">
+          </div>
+          <div class="about-details">
+            <h2>About the Couple</h2>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- <a target="_blank" href="https://icons8.com/icon/80530/wedding-cake">Wedding Cake</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
   </body>
@@ -94,5 +92,5 @@
     src="./scripts/script.js"
     defer
   ></script>
-  
+  <script src="./scripts/loadpage.js" defer></script>
 </html>

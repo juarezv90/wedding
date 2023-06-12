@@ -8,6 +8,7 @@ nav {
 
   ul {
     position: relative;
+    max-width: 1280px;
     .date {
         font-size: 1.5rem;
         font-weight: 600;
@@ -15,6 +16,10 @@ nav {
 
     &.nav {
       display: none;
+
+      li {
+        cursor: pointer;
+      }
       @include tablet {
         display: flex;
         justify-content: space-evenly;
@@ -34,10 +39,12 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         padding: 0 1rem;
 
         #burger-menu {
             width: 1.5rem;
+            height: 1.5rem;
             cursor: pointer;
         }
 
